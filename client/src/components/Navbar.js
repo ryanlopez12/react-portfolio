@@ -7,9 +7,7 @@ function Navbar() {
     <div className="navigation">
       <nav className="navbar navbar-expand navbar-dark">
         <div className="container">
-          <NavLink>
-            
-          </NavLink>
+          
           <div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
@@ -30,7 +28,7 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/projects">
-                  projects
+                  Projects
                 </NavLink>
               </li>
             </ul>
