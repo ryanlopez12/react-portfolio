@@ -1,41 +1,50 @@
+import { ButtonGroup } from "@mui/material";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "@material-ui/core";
+import { Box } from "@mui/system";
 // import Logo from "../../src/logo.png";
 
 function Navbar() {
   return (
-    <div className="navigation">
-      <nav className="navbar navbar-expand navbar-dark">
-        <div className="container">
-          
+    
+        <Box
+        sx={{ 
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          '& > *': {
+            m: 10,
+          },
+        }}>
+            
+        <ButtonGroup variant="contained" aria-label="large button group">
           <div>
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/">
-                  Home
-                  <span className="sr-only">(current)</span>
+    
+                <NavLink to="/">
+                  <Button>Home</Button>
                 </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
-                  About
+             
+              
+                <NavLink to="/about">
+                  <Button>About</Button>
                 </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
-                  Contact
+              
+             
+                <NavLink to="/contact">
+                  <Button>Contact</Button>
                 </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/projects">
-                  Projects
+              
+             
+                <NavLink to="/projects">
+                  <Button>Projects</Button>
                 </NavLink>
-              </li>
-            </ul>
+             
+   
           </div>
-        </div>
-      </nav>
-    </div>
+          </ButtonGroup>
+    
+          </Box>
   );
 }
 

@@ -1,13 +1,25 @@
-import React from 'react';
-
+import React from "react";
+import { Box } from "@material-ui/core";
 
 function Footer() {
   return (
-    <div className="footer">
-    <div className="container">
-      <h1 className="ft">© 2022 All rights reserved by Ryan Lopez</h1>
-    </div>
-  </div>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        "& > *": {
+          m: 20,
+        },
+      }}
+    >
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h5>© 2022 All rights reserved by Ryan Lopez</h5>
+    </Box>
   );
 }
 
