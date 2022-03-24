@@ -6,6 +6,7 @@ import { Box } from "@material-ui/core";
 function Home() {
  
   return (
+    
     <div><Box
     sx={{
       display: "flex",
@@ -21,6 +22,7 @@ function Home() {
   
   </div>
   );
+  
 }
 
 export default Home;
