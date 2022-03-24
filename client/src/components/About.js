@@ -1,9 +1,17 @@
 import React from "react";
-import {Card, CardMedia, Typography, CardContent} from "@material-ui/core";
+import {Card, CardMedia, Typography, CardContent, Box} from "@material-ui/core";
 
 function About() {
   return (
-    
+    <Box
+        sx={{ 
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          '& > *': {
+            m: 10,
+          },
+        }}>
     <Card
       sx={{
         maxWidth: 100,
@@ -32,6 +40,7 @@ function About() {
          
          
           </Card>
+          </Box>
 
   );
 }
