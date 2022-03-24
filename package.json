@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    
-      "server": "node ./react-portfolio/server/index.js",
-      "client": "npm start ./react-portfolio/client/index.js",
-      "dev": "\"npm run server\" \"npm run client\""
+    "start": "node server/index.js && npm client/src/index.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
   
   },
   "repository": {
