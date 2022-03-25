@@ -3,8 +3,15 @@ import { Box } from "@material-ui/core";
 
 
 
+
+
+
+
+
 function Home() {
  
+
+
   return (
     
     <div><Box
@@ -16,8 +23,17 @@ function Home() {
         m: 1,
       },
     }}
-  ><h1>Ryan Lopez</h1>
+
+  >
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Ryan Lopez</h1>
   <h4>Portfolio</h4>
+  
+ 
+    
   </Box>
   
   </div>

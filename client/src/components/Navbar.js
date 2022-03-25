@@ -1,12 +1,19 @@
 import { ButtonGroup } from "@mui/material";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Button } from "@material-ui/core";
-import { Box } from "@mui/system";
+import { Button} from "@material-ui/core";
+import { Stack } from "@mui/material";
+
+
+import { Box } from "@material-ui/core";
+
+
+
 // import Logo from "../../src/logo.png";
 
 function Navbar() {
   return (
+    <div>
     
         <Box
         sx={{ 
@@ -17,34 +24,36 @@ function Navbar() {
             m: 10,
           },
         }}>
-            
-        <ButtonGroup variant="contained" aria-label="large button group">
-          <div>
+        <Stack spacing={1} direction="row">  
+        
+         
     
-                <NavLink to="/">
-                  <Button>Home</Button>
+                <NavLink style={{ textDecoration: 'none' }} to="/">
+                
+                  <Button variant="contained">Home</Button>
+                 
                 </NavLink>
              
               
-                <NavLink to="/about">
-                  <Button>About</Button>
+                <NavLink style={{ textDecoration: 'none' }} to="/about">
+                <Button variant="contained">About</Button>
                 </NavLink>
               
              
-                <NavLink to="/contact">
-                  <Button>Contact</Button>
+                <NavLink style={{ textDecoration: 'none' }}to="/contact">
+                <Button variant="contained">Contact</Button>
                 </NavLink>
               
              
-                <NavLink to="/projects">
-                  <Button>Projects</Button>
+                <NavLink style={{ textDecoration: 'none' }}to="/projects">
+                <Button variant="contained">Projects</Button>
                 </NavLink>
              
    
-          </div>
-          </ButtonGroup>
-    
+        
+          </Stack>
           </Box>
+          </div>
   );
 }
 

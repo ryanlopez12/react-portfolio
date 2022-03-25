@@ -18,6 +18,23 @@ function Footer() {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
+
       <h5>© 2022 All rights reserved by Ryan Lopez</h5>
     </Box>
   );
